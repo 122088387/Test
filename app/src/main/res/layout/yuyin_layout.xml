@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_luyin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="录音"/>
+
+
+    <ImageView
+        android:id="@+id/iv_luyin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/reported_voice"/>
+
+    <LinearLayout
+        android:id="@+id/ll_horn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_luyin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_show_luyin"
+            android:layout_width="@dimen/d30"
+            android:layout_height="@dimen/d30"
+            android:layout_marginRight="@dimen/d8"
+            android:src="@drawable/audio_green_3"/>
+
+        <TextView
+            android:id="@+id/voice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="@dimen/d8"
+            android:text="03:20"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

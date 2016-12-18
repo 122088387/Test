@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        >
+
+        <TextView
+            android:id="@+id/tv_paigong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ems="5"
+            android:layout_marginLeft="10dp"
+            android:text="多项选择"/>
+
+        <TextView
+            android:id="@+id/tv_show_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_edit_d"
+            android:layout_marginRight="40dp"
+            android:paddingTop="@dimen/d12"
+            android:paddingBottom="@dimen/d12"
+            android:paddingLeft="@dimen/d10"
+            android:paddingRight="@dimen/d10"
+            android:hint=""
+            android:textSize="15sp"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_toRightOf="@id/tv_paigong"/>
+
+        <TextView
+            android:id="@+id/tv_show_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_arrows_right"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/jilian_select_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

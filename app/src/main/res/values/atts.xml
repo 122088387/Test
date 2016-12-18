@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--format的所有值-->
+    <!--reference   表示引用，参考某一资源ID-->
+    <!--string   表示字符串-->
+    <!--color   表示颜色值-->
+    <!--dimension   表示尺寸值-->
+    <!--boolean   表示布尔值-->
+    <!--integer   表示整型值-->
+    <!--float   表示浮点值-->
+    <!--fraction   表示百分数-->
+    <!--enum   表示枚举值-->
+    <!--flag   表示位运算-->
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean"/>
+        <attr name="matProg_barColor" format="color"/>
+        <attr name="matProg_rimColor" format="color"/>
+        <attr name="matProg_rimWidth" format="dimension"/>
+        <attr name="matProg_spinSpeed" format="float"/>
+        <attr name="matProg_barSpinCycleTime" format="integer"/>
+        <attr name="matProg_circleRadius" format="dimension"/>
+        <attr name="matProg_fillRadius" format="boolean"/>
+        <attr name="matProg_barWidth" format="dimension"/>
+        <attr name="matProg_linearProgress" format="boolean"/>
+    </declare-styleable>
+
+
+    <!--时间选择器-->
+
+    <declare-styleable name="wheelview">
+        <attr name="gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="textColorOut" format="color"/>
+        <attr name="textColorCenter" format="color"/>
+        <attr name="dividerColor" format="color"/>
+    </declare-styleable>
+
+
+    <!--RecyclerView-->
+    <declare-styleable name="FamiliarRecyclerView">
+        <attr name="frv_divider" format="reference|color"/>
+        <attr name="frv_dividerVertical" format="reference|color"/>
+        <attr name="frv_dividerHorizontal" format="reference|color"/>
+        <attr name="frv_dividerHeight" format="dimension"/>
+        <attr name="frv_dividerVerticalHeight" format="dimension"/>
+        <attr name="frv_dividerHorizontalHeight" format="dimension"/>
+        <attr name="frv_itemViewBothSidesMargin" format="dimension"/>
+        <attr name="frv_emptyView" format="reference"/>
+        <attr name="frv_isEmptyViewKeepShowHeadOrFooter" format="boolean"/>
+        <attr name="frv_layoutManager" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="grid" value="1"/>
+            <enum name="staggeredGrid" value="2"/>
+        </attr>
+        <attr name="frv_layoutManagerOrientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="frv_spanCount" format="integer"/>
+        <attr name="frv_isReverseLayout" format="boolean"/>
+        <attr name="frv_headerDividersEnabled" format="boolean"/>
+        <attr name="frv_footerDividersEnabled" format="boolean"/>
+        <attr name="frv_isNotShowGridEndDivider" format="boolean"/>
+    </declare-styleable>
+
+</resources>

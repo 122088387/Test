@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/list_view_line"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/White"
+        android:layout_margin="@dimen/d10"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/d10"
+            android:text="近一周投诉情况分析"
+            android:textSize="@dimen/TextSize_4"/>
+
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/combined_chart"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/temp1"
+            android:layout_marginBottom="@dimen/d10"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/d10"
+        android:background="@color/White"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/d10"
+            android:text="近一周咨询情况分析"
+            android:textSize="@dimen/TextSize_4"/>
+
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/combined_chart2"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/temp2"
+            android:layout_marginBottom="@dimen/d10"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/list_view_line"
+                android:paddingBottom="@dimen/d4"
+                android:paddingLeft="@dimen/d8"
+                android:paddingRight="@dimen/d8"
+                android:paddingTop="@dimen/d4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_layout_white_up"
+            android:paddingBottom="@dimen/d8"
+            android:paddingLeft="@dimen/d16"
+            android:paddingRight="@dimen/d16"
+            android:paddingTop="@dimen/d8">
+
+            <TextView
+                android:id="@+id/car_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="金源商务大厦"/>
+
+            <TextView
+                android:id="@+id/open_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPrimary"
+                tools:text="可预订"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemLineSize"
+            android:background="@drawable/list_item_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_layout_white_down"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/d8"
+            android:paddingLeft="@dimen/d16"
+            android:paddingRight="@dimen/d16"
+            android:paddingTop="@dimen/d8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/blue_point"
+                    android:layout_width="@dimen/d8"
+                    android:layout_height="@dimen/d8"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/blue_point"/>
+
+                <TextView
+                    android:id="@+id/car_accommodate_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d4"
+                    android:layout_toRightOf="@id/blue_point"
+                    android:textSize="15sp"
+                    tools:text="容纳人数："/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/blue_point1"
+                    android:layout_width="@dimen/d8"
+                    android:layout_height="@dimen/d8"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/blue_point"/>
+
+                <TextView
+                    android:id="@+id/open_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d4"
+                    android:layout_toRightOf="@id/blue_point1"
+                    android:textSize="15sp"
+                    tools:text="开放时间："/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/blue_point2"
+                    android:layout_width="@dimen/d8"
+                    android:layout_height="@dimen/d8"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/blue_point"/>
+
+                <TextView
+                    android:id="@+id/car_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d4"
+                    android:layout_toRightOf="@id/blue_point2"
+                    android:ems="9"
+                    android:textColor="@color/colorPrimary"
+                    tools:text="￥100"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_is_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/green"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

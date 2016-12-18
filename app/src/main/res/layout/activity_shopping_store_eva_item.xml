@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:padding="@dimen/d10">
+
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/shopping_store_eva_item_head"
+        android:layout_width="@dimen/d40"
+        android:layout_height="@dimen/d40"
+        android:src="@drawable/person_touxiang" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_toRightOf="@id/shopping_store_eva_item_head">
+
+        <TextView
+            android:id="@+id/shopping_store_eva_item_login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="那一片天367"
+            android:textColor="@color/black1"
+            android:textSize="@dimen/TextSize_4" />
+
+        <TextView
+            android:id="@+id/shopping_store_eva_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2016-09-28"
+            android:textSize="@dimen/TextSize_13"
+            android:textColor="@color/color_999999" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopping_store_eva_item_login_name"
+            android:layout_marginTop="@dimen/d10">
+
+            <ImageView
+                android:id="@+id/shopping_store_eva_item_star1"
+                android:layout_width="@dimen/d12"
+                android:layout_height="@dimen/d12"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/shopping_store_eva_item_star2"
+                android:layout_width="@dimen/d12"
+                android:layout_height="@dimen/d12"
+                android:layout_marginLeft="@dimen/d3"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/shopping_store_eva_item_star3"
+                android:layout_width="@dimen/d12"
+                android:layout_height="@dimen/d12"
+                android:layout_marginLeft="@dimen/d3"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/shopping_store_eva_item_star4"
+                android:layout_width="@dimen/d12"
+                android:layout_height="@dimen/d12"
+                android:layout_marginLeft="@dimen/d3"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/shopping_store_eva_item_star5"
+                android:layout_width="@dimen/d12"
+                android:layout_height="@dimen/d12"
+                android:layout_marginLeft="@dimen/d3"
+                android:src="@drawable/star_full" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shopping_store_eva_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll"
+            android:layout_marginTop="@dimen/d10"
+            android:text="热销"
+            android:textSize="@dimen/TextSize_5"
+            android:textColor="@color/black1" />
+
+        <TextView
+            android:id="@+id/shopping_store_eva_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopping_store_eva_item"
+            android:layout_marginTop="@dimen/d2"
+            android:visibility="gone"
+            android:text="商品名" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

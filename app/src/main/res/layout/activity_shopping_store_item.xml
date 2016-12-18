@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:padding="@dimen/d10">
+
+
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/shopping_store_item"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_png"
+        app:siShape="@drawable/shape_rounded_rectangle4"
+        app:siSquare="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/shopping_store_item"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/d10">
+
+            <TextView
+                android:id="@+id/round_malls_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/TextSize_4" />
+
+            <TextView
+                android:id="@+id/shopping_store_item_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="85m"
+                android:textColor="@color/mi"
+                android:textSize="@dimen/TextSize_5" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/d10"
+            android:paddingRight="@dimen/d10">
+
+            <ImageView
+                android:id="@+id/shopping_store_item_score1"
+                android:layout_width="@dimen/d12"
+                android:layout_height="@dimen/d12"
+                android:src="@drawable/star_no" />
+
+            <ImageView
+                android:id="@+id/shopping_store_item_score2"
+                android:layout_width="@dimen/d12"
+                android:layout_height="@dimen/d12"
+                android:layout_marginLeft="@dimen/d2"
+                android:src="@drawable/star_no" />
+
+            <ImageView
+                android:id="@+id/shopping_store_item_score3"
+                android:layout_width="@dimen/d12"
+                android:layout_height="@dimen/d12"
+                android:layout_marginLeft="@dimen/d2"
+                android:src="@drawable/star_no" />
+
+            <ImageView
+                android:id="@+id/shopping_store_item_score4"
+                android:layout_width="@dimen/d12"
+                android:layout_height="@dimen/d12"
+                android:layout_marginLeft="@dimen/d2"
+                android:src="@drawable/star_no" />
+
+            <ImageView
+                android:id="@+id/shopping_store_item_score5"
+                android:layout_width="@dimen/d12"
+                android:layout_height="@dimen/d12"
+                android:layout_marginLeft="@dimen/d2"
+                android:src="@drawable/star_no" />
+
+            <TextView
+                android:id="@+id/shopping_store_item_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d8"
+                android:text="5.0"
+                android:textColor="@color/pingfen" />
+
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:id="@+id/gray_line"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/gray_line"-->
+        <!--android:layout_marginLeft="@dimen/d10"-->
+        <!--android:layout_marginTop="@dimen/d4"-->
+        <!--android:background="@color/list_view_line" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/shopping_store_item_introduce"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/d4"-->
+        <!--android:ellipsize="end"-->
+        <!--android:maxLines="2"-->
+        <!--android:paddingLeft="@dimen/d10"-->
+        <!--android:paddingRight="@dimen/d10"-->
+        <!--android:text="商户介绍"-->
+        <!--android:textSize="@dimen/TextSize_6" />-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/shopping_store_item"
+        android:layout_alignLeft="@id/ll_layout"
+        android:layout_marginLeft="@dimen/d10">
+
+        <ImageView
+            android:id="@+id/img_hot_sale"
+            android:layout_width="@dimen/d18"
+            android:layout_height="@dimen/d18"
+            android:layout_centerVertical="true"
+            android:src="@drawable/hot_sale" />
+
+        <ImageView
+            android:layout_width="@dimen/d18"
+            android:layout_height="@dimen/d18"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d4"
+            android:layout_toRightOf="@id/img_hot_sale"
+            android:src="@drawable/preferential" />
+
+        <TextView
+            android:id="@+id/shopping_store_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="已售895"
+            android:textColor="@color/mi"
+            android:textSize="@dimen/TextSize_5" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

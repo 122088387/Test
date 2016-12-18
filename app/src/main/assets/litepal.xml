@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="wuyedb" />
+    <version value="1" />
+    <list>
+        <mapping class="com.chaungying.gongzuotai.dbbean.OrderMealBean"/>
+        <mapping class="com.chaungying.gongzuotai.dbbean.RepairBean" />
+        <mapping class="com.chaungying.gongzuotai.dbbean.UserIdTimeBean" />
+        <mapping class="com.chaungying.gongzuotai.dbbean.UserIdTimeRepairBean" />
+    </list>
+</litepal>

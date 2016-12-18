@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar"/>
+
+
+    <include layout="@layout/view_top_week_title"/>
+
+    <com.chaungying.calendar.views.ScrollLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/list_view_line">
+
+        <LinearLayout
+            android:id="@+id/calendar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/list_view_line"
+            android:orientation="vertical">
+
+            <com.chaungying.calendar.views.MonthView
+                android:id="@+id/month_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"/>
+
+            <com.chaungying.calendar.views.CalendarTextView
+                android:id="@+id/week_text"
+                android:layout_width="70dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorBack"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible"/>
+
+            <com.chaungying.modues.main.view.FillListView
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/list_item_divider"
+                android:dividerHeight="0dp"
+                android:scrollbars="none"/>
+
+        </LinearLayout>
+
+        <com.chaungying.calendar.views.WeekView
+            android:id="@+id/week_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:visibility="invisible"/>
+
+    </com.chaungying.calendar.views.ScrollLayout>
+    <!--<TextView-->
+    <!--style="@style/LineText"-->
+    <!--android:layout_below="@id/lv_metting_select"/>-->
+</LinearLayout>

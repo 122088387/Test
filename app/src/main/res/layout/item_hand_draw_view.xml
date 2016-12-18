@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="400dp"
+              android:layout_height="400dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <!--<Button
+            android:id="@+id/strokeWidthPlusButton"
+            android:text="清屏"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />-->
+        <Button
+            android:id="@+id/btn_clear"
+            android:text="清屏"
+            android:textColor="@color/include_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+       <!-- <Button
+            android:id="@+id/strokeWidthMinusButton"
+            android:text="SW-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />-->
+
+
+        <!--<Button
+            android:id="@+id/changeColorButton"
+            android:text="改变颜色"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />-->
+
+        <Button
+            android:id="@+id/undoButton"
+            android:text="撤销"
+            android:textColor="@color/include_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/btn_save"
+            android:text="保存"
+            android:textColor="@color/include_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/include_title"
+        android:layout_height="2dp"/>
+    <me.panavtec.drawableview.DrawableView
+        android:id="@+id/paintView"
+        android:background="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

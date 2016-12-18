@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="210dp"
+             android:layout_height="70dp"
+             android:background="@drawable/marker_pop_bg">
+
+    <ImageView
+        android:id="@+id/iv_map_marker_pop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/d4"
+        android:layout_marginLeft="@dimen/d10"
+        android:src="@drawable/supermarket_white"
+        />
+
+    <TextView
+        android:id="@+id/tv_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/d4"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="@dimen/d12"
+        android:gravity="center"
+        android:maxLines="3"
+        android:text="中国电子未来科技城"
+        android:textSize="12sp"/>
+</FrameLayout>

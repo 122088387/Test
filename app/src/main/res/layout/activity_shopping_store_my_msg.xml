@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/shopping_store_my_msg_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        android:background="@android:color/white"
+        android:elevation="@dimen/d4"
+        tl:tl_indicator_bounce_enable="false"
+        tl:tl_indicator_color="@color/colorPrimary"
+        tl:tl_indicator_gravity="BOTTOM"
+        tl:tl_indicator_margin_bottom="0dp"
+        tl:tl_textSelectColor="?attr/colorPrimary"
+        tl:tl_textUnselectColor="@android:color/darker_gray"
+        tl:tl_underline_color="@android:color/darker_gray"
+        tl:tl_underline_height="1dp"
+        tl:tl_textsize="@dimen/TextSize_6" />
+
+    <View
+        android:id="@+id/shopping_store_my_msg_fill"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/itemLineSize"
+        android:background="@color/colorBack" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/shopping_store_my_msg_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

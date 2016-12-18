@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@android:id/background"
+        android:height="@dimen/d4"
+        android:gravity="center_vertical">
+        <shape>
+            <corners android:radius="5dip" />
+            <solid android:color="#dddddd" />
+        </shape>
+    </item>
+
+    <item
+        android:id="@android:id/progress"
+        android:height="@dimen/d4"
+        android:gravity="center_vertical">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="5dip" /><!--<span style="font-family: Arial, Helvetica, sans-serif;">设置为0dp就是直角</span>-->
+
+                <solid android:color="@color/color_fe7634" />
+                <span style="font-family: Arial, Helvetica, sans-serif;"><!--progress的颜色--></span>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

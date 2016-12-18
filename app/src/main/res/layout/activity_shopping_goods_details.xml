@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e8e8e8"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/list_view_line"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/shopping_goods_details_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/White"
+                android:scaleType="fitXY" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/itemLineSize"
+                android:background="@color/list_view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shopping_goods_details_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="@dimen/d10"
+                    android:text="法式面包"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/TextSize_4" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/shopping_store_item_sellerNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="月销售"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/TextSize_5" />
+
+                    <TextView
+                        android:id="@+id/shopping_store_item_evalGoodPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d6"
+                        android:text="好评率"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/TextSize_5" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d10">
+
+                    <TextView
+                        android:id="@+id/shopping_goods_details_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥88"
+                        android:textColor="@color/red"
+                        android:textSize="19sp" />
+                    <TextView
+                        android:id="@+id/shopping_goods_details_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/add_shopping_cart"
+                        android:padding="@dimen/d10"
+                        android:text="加入购物车"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/itemLineSize"
+                android:background="@color/white"
+                android:padding="@dimen/d10">
+
+                <TextView
+                    android:id="@+id/shopping_goods_details_tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="商品信息"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/TextSize_4" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_details_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shopping_goods_details_tv1"
+                    android:layout_marginTop="@dimen/d15"
+                    android:text=""
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/TextSize_4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/itemLineSize"
+                android:background="@color/white"
+                android:padding="@dimen/d10">
+
+                <TextView
+                    android:id="@+id/shopping_goods_details_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品评价"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/TextSize_4" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_details_total_eva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:layout_toRightOf="@id/shopping_goods_details_tv"
+                    android:text="(20)"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/TextSize_4" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shopping_goods_details_total_eva">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:id="@+id/shopping_goods_details_eva_ratio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d15"
+                            android:text="好评率"
+                            android:textSize="@dimen/TextSize_4" />
+
+                        <TextView
+                            android:id="@+id/shopping_goods_details_eva_ratio_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/d15"
+                            android:layout_toRightOf="@id/shopping_goods_details_eva_ratio"
+                            android:text="96%"
+                            android:layout_marginLeft="@dimen/d2"
+                            android:textColor="@color/red_fd4420"
+                            android:textSize="@dimen/TextSize_4" />
+                    </RelativeLayout>
+
+
+                    <ProgressBar
+                        android:id="@+id/shopping_goods_details_progressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_below="@id/rl_1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/d15"
+                        android:indeterminate="false"
+                        android:indeterminateOnly="false"
+                        android:progressDrawable="@drawable/progress_style" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

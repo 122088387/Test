@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/d16"
+             android:layout_marginRight="@dimen/d16"
+             android:layout_marginBottom="@dimen/d40"
+             android:layout_marginTop="@dimen/d16">
+
+    <ImageView
+        android:id="@+id/view_news_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"/>
+</FrameLayout>

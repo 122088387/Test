@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/list_view_line"
+                android:paddingBottom="@dimen/d4"
+                android:paddingLeft="@dimen/d8"
+                android:paddingRight="@dimen/d8"
+                android:paddingTop="@dimen/d4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_layout_white_up"
+            android:padding="@dimen/d8">
+
+            <ImageView
+                android:id="@+id/blue_point"
+                android:layout_width="@dimen/d8"
+                android:layout_height="@dimen/d8"
+                android:layout_centerVertical="true"
+                android:src="@drawable/blue_point"/>
+
+            <TextView
+                android:id="@+id/fill_list_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d8"
+                android:layout_toRightOf="@id/blue_point"
+                android:maxWidth="@dimen/d200"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                tools:text="标题:测试数据fdsfdsfdsfdsfdsfdsfdsfds0"/>
+
+            <TextView
+                android:id="@+id/fill_list_item_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorPrimary"
+                tools:text="2016-05-23"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemLineSize"
+            android:textColor="@color/list_view_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_layout_blue"
+            android:padding="@dimen/d8">
+
+            <TextView
+                android:id="@+id/fill_list_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d16"
+                android:textColor="@color/vice_title"
+                tools:text="咨询内容"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

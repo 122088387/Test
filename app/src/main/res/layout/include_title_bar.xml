@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Title -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/include_title"
+             android:clipToPadding="true"
+             android:fitsSystemWindows="true"
+             android:focusable="true"
+             android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/title_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/title_menu"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:padding="16dp"/>
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/title_actionbar2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?android:attr/actionBarSize"-->
+        <!--android:visibility="gone"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/title_back2"-->
+            <!--android:layout_width="?android:attr/actionBarSize"-->
+            <!--android:layout_height="?android:attr/actionBarSize"-->
+            <!--android:padding="16dp"-->
+
+            <!--android:src="@drawable/nav_return"/>-->
+
+        <!--<LinearLayout-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="@drawable/title_round_white"-->
+            <!--android:orientation="horizontal">-->
+            <!--&lt;!&ndash;当天&ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/day"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/title_round_white_left"-->
+                <!--android:onClick="doClick"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:text="当天"-->
+                <!--android:textSize="16sp"/>-->
+            <!--&lt;!&ndash;当月&ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/month"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/title_round_blue_right"-->
+                <!--android:onClick="doClick"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:text="当月"-->
+                <!--android:textSize="16sp"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/title2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:text=""-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="20sp"/>-->
+
+    <!--</RelativeLayout>-->
+</FrameLayout>

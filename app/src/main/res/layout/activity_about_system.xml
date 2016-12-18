@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/set_about_system"
+                android:layout_height="match_parent">
+
+
+    <include layout="@layout/include_title_bar"
+        android:id="@+id/include"/>
+
+
+    <ImageView
+        android:layout_below="@id/include"
+        android:id="@+id/iv_system"
+        android:layout_width="@dimen/d200"
+        android:layout_height="@dimen/d200"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d24"
+        android:background="@drawable/big_logo"/>
+
+    <TextView
+        android:id="@+id/tv_system_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_system"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d20"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/tv_system_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_system_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d8"
+        android:textColor="@color/black"
+        android:text="@string/company_name"/>
+
+    <TextView
+        android:id="@+id/tv_copy_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d8"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/d56"
+        android:text="CopyRight @2015 - 2016"/>
+
+</RelativeLayout>

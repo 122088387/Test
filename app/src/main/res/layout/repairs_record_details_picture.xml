@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              >
+
+    <TextView
+        android:id="@+id/tv_show_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/d10"
+        android:textColor="@color/tijiao_title"
+        android:text="现场拍照"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/d10"
+        android:background="@color/list_view_line"
+        android:layout_height="@dimen/itemLineSize"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="@dimen/d10"
+        android:paddingRight="@dimen/d10"
+        android:layout_marginTop="@dimen/d10"
+        android:background="#FAFAFA">
+
+        <HorizontalScrollView
+            android:id="@+id/selectimg_horizontalScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FAFAFA"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <GridView
+                    android:id="@+id/noScrollgridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fastScrollEnabled="true"
+                    android:focusable="true"
+                    android:layout_gravity="center_vertical"
+                    android:horizontalSpacing="0dp"
+                    android:scrollbars="none"
+                    android:scrollingCache="false"
+                    android:stretchMode="spacingWidthUniform"
+                    android:verticalSpacing="1dp">
+                </GridView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/d10"
+        android:background="@color/list_view_line"
+        android:layout_height="@dimen/itemLineSize"/>
+
+</LinearLayout>

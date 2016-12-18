@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">瑞达物业</string>
+    <string name="company_name">北京中电瑞达物业有限公司</string>
+    <string name="company_name1">智慧园区</string>
+
+
+    <string name="send_work_task">send_work_task</string>
+
+
+    <!--登录界面-->
+    <string name="phone">手机号</string>
+    <string name="login">登录</string>
+    <string name="auto_login">自动登录</string>
+    <string name="is_login">正在登录...</string>
+    <string name="btn_exit">退出</string>
+    <!--登陆广播的标示-->
+    <string name="filter_log">log</string>
+
+    <!--主界面-->
+    <string name="menu_apply">应用</string>
+    <string name="menu_task_msg">任务消息</string>
+    <string name="menu_address">通讯录</string>
+    <string name="menu_set">设置</string>
+
+    <!--设置标题时左边没有图片-->
+    <string name="title"></string>
+
+    <!--现场报修-->
+    <string name="xian_chang_baoxiu">现场报修</string>
+    <string name="baoxiu_jilu">报修记录</string>
+    <!--<string name="tijiao"><u>提交</u></string>-->
+    <string name="tijiao">提交</string>
+    <string name="hui_fu">回复</string>
+    <string name="baoxiu_leixing">报修类型</string>
+    <string name="shinei_baoxiu">室内报修</string>
+    <string name="gonggong_sheshi">公共设施</string>
+
+    <string name="baoxiu_chuli">报修处理</string>
+
+
+    <!--报修任务-->
+    <string name="task_name">任务名称：</string>
+    <string name="task_address">地址：</string>
+    <string name="task_order_time">下单时间：</string>
+    <!--报修单详情-->
+    <string name="repair_order_datails">报修单详情</string>
+
+
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <!--会议室-->
+    <string name="metting_room">会议室预订</string>
+    <string name="metting_room_details">预订详情</string>
+    <string name="metting_room_order">预定会议室</string>
+
+    <!--用车管理-->
+    <string name="use_car">用车管理</string>
+    <string name="use_car_order">预定车辆</string>
+
+    <!--巡查任务-->
+    <string name="patrols">巡查任务</string>
+    <!--紧急通告-->
+    <string name="time_select">时间选择</string>
+
+    <!--签到-->
+    <string name="signin">签到</string>
+    <string name="statistical">统计</string>
+    <string name="signin_statistical">签到统计</string>
+
+    <!--工作单-->
+    <string name="work_list">工作单</string>
+
+    <!-- 时间选择器-->
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+
+
+    <!--_______________________日程_______________________-->
+    <string name="monday">一</string>
+    <string name="tuseday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="sunday">日</string>
+
+
+    <string name="gou_wu_che">购物车</string>
+    <string name="bian_ji">编辑</string>
+    <string name="shipping_address">选择收货地址</string>
+    <string name="xin_zeng">新增</string>
+
+
+    <string name="wo_de_shang_pu">我的商铺</string>
+    <string name="xiao_fei">消费</string>
+
+
+
+</resources>

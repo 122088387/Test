@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar_text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/d10"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/d16">
+
+            <TextView
+                android:id="@+id/signIn_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d8"
+                android:layout_marginTop="@dimen/d8"
+                android:textColor="@color/huise2"
+                android:textSize="@dimen/TextSize_5" />
+
+            <!--时间-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/signIn_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextSize_2" />
+
+                <TextView
+                    android:id="@+id/signIn_time_seconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d8"
+                    android:text="59"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextSize_3" />
+
+            </LinearLayout>
+
+            <!--签到时间-->
+            <!--<LinearLayout-->
+            <!--android:id="@+id/signIn_signTimeLayout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="@dimen/d8"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="invisible">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/signIn_signTimeTv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="签到时间："-->
+            <!--android:textColor="@color/gray"-->
+            <!--android:textSize="@dimen/TextSize_5"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/signIn_signTime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="12:00"-->
+            <!--android:textColor="@color/gray"-->
+            <!--android:textSize="@dimen/TextSize_5"/>-->
+
+            <!--</LinearLayout>-->
+
+
+            <!--网络名称-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d16"
+                android:layout_marginTop="@dimen/d4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_small_wifi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/d8"
+                    android:text="网络名称："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/TextSize_5" />
+
+                <TextView
+                    android:id="@+id/signIn_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="未知"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/TextSize_5" />
+            </LinearLayout>
+
+            <!--当前位置-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="top"
+                    android:src="@drawable/icon_small_location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="@dimen/d8"
+                    android:text="当前位置："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/TextSize_5" />
+                <TextView
+                    android:id="@+id/signIn_latitude"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="invisible"
+                    android:text=""
+                     />
+                <TextView
+                    android:id="@+id/signIn_longitude"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="invisible"
+                    android:text=""
+                    />
+                <TextView
+                    android:id="@+id/signIn_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="未知"
+                    android:minLines="2"
+                    android:ems="10"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/TextSize_5" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/d10"
+            android:background="@color/White">
+
+            <!--<com.chaungying.qiandao.view.ProgressWheel-->
+            <!--xmlns:wheel="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/signIn_progress"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="110dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--wheel:matProg_barColor="@color/colorPrimary"-->
+            <!--wheel:matProg_barWidth="@dimen/d4"-->
+            <!--wheel:matProg_fillRadius="true"/>-->
+
+            <com.chaungying.modues.main.view.SquareLayout
+                android:id="@+id/signIn_btn_rootGrayLayout"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_circle_gray" />
+
+            <com.chaungying.modues.main.view.SquareLayout
+                android:id="@+id/signIn_btn_rootLayout"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_circle_primary"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_location" />
+
+                <TextView
+                    android:id="@+id/signIn_btnTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="签到"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/TextSize_3" />
+
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/signIn_btnUp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/d16"-->
+            <!--android:gravity="center"-->
+            <!--android:text="点击按钮签到"-->
+            <!--android:textColor="@color/colorBackDown"-->
+            <!--android:textSize="@dimen/TextSize_4"/>-->
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/d10"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/d16">
+
+            <TextView
+                android:id="@+id/signIn_date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d8"
+                android:layout_marginTop="@dimen/d8"
+                android:textColor="@color/huise2"
+                android:textSize="@dimen/TextSize_5" />
+
+            <!--时间-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/signIn_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextSize_2" />
+
+                <TextView
+                    android:id="@+id/signIn_time_seconds2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d8"
+                    android:text="59"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextSize_3" />
+
+            </LinearLayout>
+
+            <!--签到时间-->
+            <!--<LinearLayout-->
+            <!--android:id="@+id/signIn_signTimeLayout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="@dimen/d8"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="invisible">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/signIn_signTimeTv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="签到时间："-->
+            <!--android:textColor="@color/gray"-->
+            <!--android:textSize="@dimen/TextSize_5"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/signIn_signTime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="12:00"-->
+            <!--android:textColor="@color/gray"-->
+            <!--android:textSize="@dimen/TextSize_5"/>-->
+
+            <!--</LinearLayout>-->
+
+
+            <!--网络名称-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d16"
+                android:layout_marginTop="@dimen/d4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_small_wifi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/d8"
+                    android:text="网络名称："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/TextSize_5" />
+
+                <TextView
+                    android:id="@+id/signIn_wifi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="未知"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/TextSize_5" />
+            </LinearLayout>
+
+            <!--当前位置-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="top"
+                    android:src="@drawable/icon_small_location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="@dimen/d8"
+                    android:text="当前位置："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/TextSize_5" />
+
+                <TextView
+                    android:id="@+id/signIn_location2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="未知"
+                    android:ems="10"
+                    android:minLines="2"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/TextSize_5" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/d10"
+            android:background="@color/White">
+
+            <!--<com.chaungying.qiandao.view.ProgressWheel-->
+            <!--xmlns:wheel="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/signIn_progress"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="110dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--wheel:matProg_barColor="@color/colorPrimary"-->
+            <!--wheel:matProg_barWidth="@dimen/d4"-->
+            <!--wheel:matProg_fillRadius="true"/>-->
+
+            <com.chaungying.modues.main.view.SquareLayout
+                android:id="@+id/signIn_btn_rootGrayLayout2"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_circle_gray" />
+
+            <com.chaungying.modues.main.view.SquareLayout
+                android:id="@+id/signIn_btn_rootLayout2"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_circle_primary"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_location" />
+
+                <TextView
+                    android:id="@+id/signIn_btnTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="签退"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/TextSize_3" />
+
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/signIn_btnUp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/d16"-->
+            <!--android:gravity="center"-->
+            <!--android:text="点击按钮签到"-->
+            <!--android:textColor="@color/colorBackDown"-->
+            <!--android:textSize="@dimen/TextSize_4"/>-->
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

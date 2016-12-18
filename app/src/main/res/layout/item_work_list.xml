@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White">
+
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_workList_avatar"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:padding="8dp"
+        app:aiv_ShowBoarder="false"
+        app:aiv_TextColor="@color/White"
+        app:aiv_TextSizeRatio="0.4"/>
+
+    <RelativeLayout
+        android:id="@+id/item_workList_timeMsgLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/d16">
+
+        <TextView
+            android:id="@+id/item_workList_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:layout_marginTop="@dimen/d8"
+            android:textSize="@dimen/TextSize_6"
+            tools:text="时间"/>
+
+        <com.flyco.tablayout.widget.MsgView
+            xmlns:mv="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/item_workList_msgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_workList_time"
+            android:layout_marginTop="@dimen/d2"
+            android:layout_alignLeft="@id/item_workList_time"
+            android:textColor="#ffffff"
+            android:textSize="11.5sp"
+            android:gravity="center"
+            android:visibility="invisible"
+            mv:mv_backgroundColor="#FD481F"
+            mv:mv_isRadiusHalfHeight="true"
+            mv:mv_strokeColor="#ffffff"
+            mv:mv_strokeWidth="1dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_alignTop="@id/item_workList_timeMsgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/item_workList_timeMsgLayout"
+        android:layout_toRightOf="@id/item_workList_avatar"
+        android:padding="@dimen/d8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_workList_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="订餐提醒"/>
+
+        <TextView
+            android:id="@+id/item_workList_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/d4"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="你有新短消息"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+
+</RelativeLayout>

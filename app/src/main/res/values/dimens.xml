@@ -1,0 +1,86 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="gray_line">1dp</dimen>
+
+    <dimen name="titleBelowBarSize">50dp</dimen>
+
+
+    <dimen name="itemLineSize">0.5dp</dimen>
+
+    <dimen name="itemLineSize0">0dp</dimen>
+
+
+    <!--登录界面-->
+    <dimen name="module_spacing">8dp</dimen>
+
+    <!--相机的属性值-->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="list_text_size">25sp</dimen>
+
+    <dimen name="dp">10dp</dimen>
+    <dimen name="normal_text_size">25sp</dimen>
+
+    <!--子控件textview  与 edittext间的距离-->
+    <dimen name="text_edit_d">20dp</dimen>
+
+    <!--新闻通知-->
+    <dimen name="contentMarginSize">1dp</dimen>
+
+    <dimen name="d200">200dp</dimen>
+    <dimen name="d170">170dp</dimen>
+    <dimen name="d100">100dp</dimen>
+
+
+    <dimen name="d30">30dp</dimen>
+    <dimen name="d24">24dp</dimen>
+    <dimen name="d40">40dp</dimen>
+    <dimen name="d35">35dp</dimen>
+    <dimen name="d60">60dp</dimen>
+    <dimen name="d45">45dp</dimen>
+    <dimen name="d80">80dp</dimen>
+    <dimen name="d56">56dp</dimen>
+    <dimen name="d84">84dp</dimen>
+    <!--签到-->
+    <dimen name="d25">25dp</dimen>
+    <dimen name="d20">20dp</dimen>
+    <dimen name="d18">18dp</dimen>
+    <dimen name="d16">16dp</dimen>
+    <dimen name="d14">14dp</dimen>
+    <dimen name="d12">12dp</dimen>
+    <dimen name="d10">10dp</dimen>
+    <dimen name="d15">15dp</dimen>
+    <dimen name="d8">8dp</dimen>
+    <dimen name="d6">6dp</dimen>
+    <dimen name="d5">5dp</dimen>
+    <dimen name="d4">4dp</dimen>
+    <dimen name="d3">3dp</dimen>
+    <dimen name="d2">2dp</dimen>
+
+    <!--字体大小规范-->
+    <dimen name="TextSize_1">56sp</dimen>
+    <dimen name="TextSize_2">34sp</dimen>
+    <dimen name="TextSize_3">20sp</dimen>
+    <dimen name="TextSize_19">19sp</dimen>
+    <dimen name="TextSize_4">16sp</dimen>
+    <dimen name="TextSize_15">15sp</dimen>
+    <dimen name="TextSize_17">17sp</dimen>
+    <dimen name="TextSize_5">14sp</dimen>
+    <dimen name="TextSize_6">12sp</dimen>
+    <dimen name="TextSize_13">13sp</dimen>
+    <dimen name="TextSize_7">10sp</dimen>
+
+    <!--时间选择器-->
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+
+</resources>

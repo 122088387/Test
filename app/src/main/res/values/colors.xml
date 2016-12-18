@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--本应用中标题的颜色-->
+    <color name="colorPrimary">#2897F2</color>
+
+    <!--系统状态栏的颜色-->
+    <color name="colorPrimaryDark">#2897F2</color>
+    <!--输入框焦点颜色  单选按钮的颜色-->
+    <color name="colorAccent">#2897F2</color>
+
+    <color name="colorAccentDown">#195C9B</color>
+
+    <!--登录界面-->
+    <color name="background">#ECECEC</color>
+    <color name="color_999999">#999999</color>
+
+
+    <!--主界面的title颜色-->
+    <color name="include_title">#2897F2</color>
+    <color name="tab_host_bar">#E1E1E1</color>
+    <color name="apply_item_text">#000000</color>
+    <color name="apply_item_background">#FFFFFF</color>
+    <!--应用界面的背景色-->
+    <color name="apply_background">#ECECEC</color>
+
+    <!--半透明-->
+    <color name="ban_tou_ming">#00000000</color>
+
+    <!--黄色  扇形的一组颜色-->
+    <color name="fanshaped1">#AFAAFF</color>
+    <color name="fanshaped2">#EC8742</color>
+    <color name="fanshaped3">#EE86A6</color>
+    <color name="fanshaped4">#4EB4F5</color>
+    <color name="fanshaped5">#FEC75D</color>
+    <color name="fanshaped6">#32D7C4</color>
+
+
+    <!--菜单按钮的背景颜色-->
+    <color name="menu_item">#909090</color>
+    <!--主界面菜单上的线-->
+    <color name="menu_top_line">#909090</color>
+    <!--消息和设置界面的背景色-->
+    <color name="main_msg">#FFFFFF</color>
+    <!--设置界面分割线颜色-->
+    <color name="set_background">#ECECEC</color>
+    <color name="set_item">#FFFFFF</color>
+
+    <!--现场报修界面-->
+    <color name="baoxiu_title">#2897F2</color>
+    <color name="tijiao">#FFFFFF</color>
+
+
+    <!--配置界面颜色-->
+    <color name="huise2">#E1E1E1</color>
+    <color name="huise3">#FFF1F0F0</color>
+    <color name="black">#000000</color>
+    <color name="black1">#111111</color>
+    <color name="black2">#333333</color>
+    <color name="red">#ff0000</color>
+    <color name="color_fe7634">#fe7634</color>
+    <color name="red_fd4420">#fd4420</color>
+    <color name="click_after">#C2C2C2</color>
+    <color name="list_view_line">#E1E1E1</color>
+    <color name="color_f8f8f8">#f8f8f8</color>
+    <color name="color_e8e8e8">#e8e8e8</color>
+    <color name="e8e8e8">#E8E8E8</color>
+    <color name="vice_title">#888</color>
+    <color name="tijiao_title">#AAA</color>
+    <color name="layout_blue">#f8fbfe</color>
+    <color name="week_bg">#FFF56804</color>
+
+    <!--设置界面关于系统背景-->
+    <color name="set_about_system">#FFF1F4F5</color>
+
+
+    <!--签到-->
+    <color name="gray">#AAA</color>
+    <color name="colorBackDown">#CCCCCC</color>
+    <color name="colorBack">#ECECEC</color>
+    <color name="White">#FFFFFFFF</color>
+    <color name="mi">#FF999999</color>
+    <color name="color666666">#FF666666</color>
+    <color name="pingfen">#FFFFAF23</color>
+
+    <!--半透明-->
+    <color name="translucent">#33000000</color>
+
+    <color name="translucent1">#00ffffff</color>
+
+    <!--时间选择器-->
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+
+</resources>

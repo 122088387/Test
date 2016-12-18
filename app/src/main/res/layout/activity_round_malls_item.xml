@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:padding="@dimen/d10">
+
+    <ImageView
+        android:id="@+id/iv_round_malls_item"
+        android:layout_width="@dimen/d100"
+        android:layout_height="@dimen/d100"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_round_malls_item"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/round_malls_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="鼠标"
+            android:textColor="@color/black"
+            android:textSize="@dimen/TextSize_4"/>
+
+        <TextView
+            android:id="@+id/round_malls_item_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="描述：不错！不错！不错！不错！"
+            android:textSize="@dimen/TextSize_5"/>
+
+        <TextView
+            android:id="@+id/round_malls_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="199.9"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+
+    <com.chaungying.round_malls.view.AddSubtractBtnView
+        android:id="@+id/item_add_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/d10"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

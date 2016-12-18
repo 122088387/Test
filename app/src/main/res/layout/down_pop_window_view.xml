@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_pop_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:divider="@drawable/linearlayout_divider_gray"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+    </LinearLayout>
+
+    <TextView
+        style="@style/LineText"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/list_view_line"
+        android:layout_height="fill_parent">
+
+        <!--<com.chaungying.site_repairs.view.PullToRefreshLayout-->
+        <!--android:id="@+id/refresh_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<include layout="@layout/refresh_head"/>-->
+        <!--&lt;!&ndash; 支持所有实现Pullable接口的View &ndash;&gt;-->
+
+        <!--<com.chaungying.site_repairs.view.PullableListView-->
+        <!--android:id="@+id/content_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/list_view_line"-->
+        <!--android:divider="@android:color/darker_gray"-->
+        <!--android:scrollbars="none"-->
+        <!--android:dividerHeight="0dp"/>-->
+
+        <!--<include layout="@layout/load_more"/>-->
+        <!--</com.chaungying.site_repairs.view.PullToRefreshLayout>-->
+
+        <ListView
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/list_view_line"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"/>
+
+        <View
+            android:id="@+id/zhe_zhao_ceng"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#22000000"/>
+
+        <ListView
+            android:id="@+id/my_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:divider="@color/huise2"
+            android:visibility="gone"
+            android:dividerHeight="0.5dp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

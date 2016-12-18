@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_pop"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/White"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_anim"
+                android:layout_width="@dimen/d200"
+                android:layout_height="@dimen/d20"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d20"
+                android:src="@drawable/recordaudio_voice1"/>
+
+            <TextView
+                android:id="@+id/recoreTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d20"
+                tools:text="00:00"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/recordaudio_record"
+            android:layout_width="@dimen/d100"
+            android:layout_height="@dimen/d100"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d56"
+            android:src="@drawable/recordaudio_record"/>
+
+        <TextView
+            android:id="@+id/recoreFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recordaudio_record"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/d8"
+            android:textColor="@color/vice_title"
+            android:textSize="@dimen/TextSize_3"
+            tools:text="完成"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

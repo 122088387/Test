@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e8e8e8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/include_title_bar" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/d10"
+                android:text="送达时间："
+                android:textSize="@dimen/TextSize_5" />
+
+            <TextView
+                android:id="@+id/order_list_evaluation_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text1"
+                android:padding="@dimen/d10"
+                android:text="15:54" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemLineSize"
+            android:background="@color/e8e8e8" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/d10"
+                android:text="配送服务："
+                android:textSize="@dimen/TextSize_5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text2"
+                android:padding="@dimen/d10">
+
+                <ImageView
+                    android:id="@+id/iv_start1"
+                    android:layout_width="@dimen/d25"
+                    android:layout_height="@dimen/d25"
+                    android:src="@drawable/star_no" />
+
+                <ImageView
+                    android:id="@+id/iv_start2"
+                    android:layout_width="@dimen/d25"
+                    android:layout_height="@dimen/d25"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:src="@drawable/star_no" />
+
+                <ImageView
+                    android:id="@+id/iv_start3"
+                    android:layout_width="@dimen/d25"
+                    android:layout_height="@dimen/d25"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:src="@drawable/star_no" />
+
+                <ImageView
+                    android:id="@+id/iv_start4"
+                    android:layout_width="@dimen/d25"
+                    android:layout_height="@dimen/d25"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:src="@drawable/star_no" />
+
+                <ImageView
+                    android:id="@+id/iv_start5"
+                    android:layout_width="@dimen/d25"
+                    android:layout_height="@dimen/d25"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:src="@drawable/star_no" />
+
+                <TextView
+                    android:id="@+id/order_list_evaluation_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:text=""
+                    android:textColor="@android:color/holo_orange_dark" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/order_list_evaluation_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d8"
+            android:background="@color/White"
+            android:gravity="left"
+            android:hint="请输入评价内容"
+            android:minLines="8"
+            android:paddingLeft="@dimen/d10"
+            android:paddingRight="@dimen/d10"
+            android:paddingTop="@dimen/d6"
+            android:textSize="@dimen/TextSize_5" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_list_evaluation_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/d10"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:padding="@dimen/d10"
+        android:text="提交评价"
+        android:textColor="@color/White"
+        android:textSize="@dimen/TextSize_4" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Title -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/itemLineSize"
+        android:layout_gravity="center"
+        android:background="@color/tijiao_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d10"
+        android:background="@color/list_view_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/itemLineSize"
+        android:layout_gravity="center"
+        android:background="@color/tijiao_title" />
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/d4"
+    android:paddingLeft="@dimen/d8"
+    android:paddingRight="@dimen/d8"
+    android:paddingTop="@dimen/d4">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_layout_white_up"
+            android:paddingBottom="@dimen/d4"
+            android:paddingLeft="@dimen/d8"
+            android:paddingRight="@dimen/d8"
+            android:paddingTop="@dimen/d4">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/blue_point"
+                    android:layout_width="@dimen/d8"
+                    android:layout_height="@dimen/d8"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/blue_point" />
+
+                <TextView
+                    android:id="@+id/fill_list_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d8"
+                    android:layout_toRightOf="@id/blue_point"
+                    android:textColor="@color/black"
+                    tools:text="标题:测试数据0" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/fill_list_item_type"
+                android:layout_width="@dimen/d20"
+                android:layout_height="@dimen/d20"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:src="@drawable/pai_gong" />
+
+            <TextView
+                android:id="@+id/fill_list_item_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl"
+                android:layout_marginLeft="@dimen/d16"
+                android:layout_marginTop="@dimen/d4"
+                android:textColor="@color/black"
+                tools:text="2016-05-23" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_layout_blue"
+            android:paddingBottom="@dimen/d4"
+            android:paddingLeft="@dimen/d8"
+            android:paddingRight="@dimen/d8"
+            android:paddingTop="@dimen/d4">
+
+            <TextView
+                android:id="@+id/fill_list_item_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d16"
+                android:textColor="@color/black"
+                tools:text="填报人:张三" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

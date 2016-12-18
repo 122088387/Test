@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\androidStudio\WuYe3\ToggleButtonLib\assets"/><source path="D:\androidStudio\WuYe3\ToggleButtonLib\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\androidStudio\WuYe3\ToggleButtonLib\src\debug\assets"/></dataSet></merger>

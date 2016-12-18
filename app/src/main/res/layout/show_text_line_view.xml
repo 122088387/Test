@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="?android:attr/actionBarSize"
+        android:layout_height="?android:attr/actionBarSize"
+        android:src="@color/huise2"/>
+
+    <TextView
+        android:id="@+id/show_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/d20"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_menu"
+        android:text="糖醋里脊"/>
+
+    <TextView
+        android:layout_below="@id/iv_menu"
+        style="@style/LineText"
+        />
+</RelativeLayout>

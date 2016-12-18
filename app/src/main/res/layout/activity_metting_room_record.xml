@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/mettingRoomCancel_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/colorBack"
+            android:dividerHeight="@dimen/itemLineSize" />
+
+        <TextView
+            android:id="@+id/mettingRoomCancel_nullData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="无数据"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/TextSize_5"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:background="@color/White"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/d10">
+
+    <ImageView
+        android:id="@+id/shopping_cart_item_select"
+        android:layout_width="@dimen/d18"
+        android:layout_height="@dimen/d18"
+        android:layout_gravity="center"
+        android:src="@drawable/select" />
+
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/shopping_cart_item_image"
+        android:layout_width="@dimen/d60"
+        android:layout_height="@dimen/d60"
+        android:layout_marginLeft="@dimen/d10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_png"
+        app:siShape="@drawable/shape_rounded_rectangle4"
+        app:siSquare="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/d8"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/shopping_cart_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子血压计"
+            android:textSize="@dimen/TextSize_17"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_marginTop="@dimen/d8"
+            android:textColor="@color/black1" />
+
+        <TextView
+            android:id="@+id/shopping_cart_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/shopping_cart_item_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="￥301"
+            android:textSize="@dimen/TextSize_19"
+            android:textColor="@color/red_fd4420" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/shopping_cart_item_num"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="×3" />-->
+
+        <com.chaungying.round_malls.view.AddSubtractBtnView
+            android:id="@+id/shopping_cart_add_sub_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
+

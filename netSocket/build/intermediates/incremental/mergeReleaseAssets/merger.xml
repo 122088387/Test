@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\androidStudio\WuYe3\netSocket\src\main\assets"/><source path="D:\androidStudio\WuYe3\netSocket\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\androidStudio\WuYe3\netSocket\src\release\assets"/></dataSet></merger>

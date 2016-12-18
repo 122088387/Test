@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chaungying.wuye3">
+
+    <!--百度地图网络定位需要的权限-->
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--读取设置信息-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!--获取任务-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--写入设置-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!--极光推送-->
+    <permission
+        android:name="${applicationId}.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.chaungying.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--程序入口-->
+        <activity
+            android:name="com.chaungying.modues.login.ui.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--主界面-->
+        <activity
+            android:name="com.chaungying.modues.main.ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <!--查看照片-->
+        <activity
+            android:name="com.chaungying.common.ui.PhotoActivity"
+            android:screenOrientation="portrait" />
+        <!--多选界面-->
+        <activity
+            android:name="com.chaungying.common.ui.MoreSelectActivity"
+            android:screenOrientation="portrait" />
+        <!--录像界面-->
+        <activity
+            android:name="com.chaungying.common.ui.VideoActivity"
+            android:screenOrientation="portrait" />
+        <!--级联界面-->
+        <activity
+            android:name="com.chaungying.common.ui.JiLianActivity1"
+            android:screenOrientation="portrait" />
+        <!--级联选择界面-->
+        <activity
+            android:name="com.chaungying.common.ui.JiLianEditActivity"
+            android:screenOrientation="portrait" />
+        <!--会议室预定-->
+        <activity
+            android:name="com.chaungying.metting.ui.MettingRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.metting.ui.MettingRoomSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.metting.ui.MettingRoomOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.metting.ui.MettingRoomRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.site_repairs.ui.PicShowActivity"
+            android:screenOrientation="portrait" />
+
+        <!--巡查任务-->
+        <activity
+            android:name="com.chaungying.patrols.ui.PatrolsActivity"
+            android:screenOrientation="portrait" />
+
+        <!--紧急通告-->
+        <activity
+            android:name="com.chaungying.jinjitonggao.ui.TongGaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.jinjitonggao.ui.TimeSelectActivity"
+            android:screenOrientation="portrait" />
+        <!--签到-->
+        <activity
+            android:name="com.chaungying.qiandao.ui.SignInActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.qiandao.ui.TongJiActivity"
+            android:screenOrientation="portrait" />
+        <!--工作单-->
+        <activity
+            android:name="com.chaungying.work_list.ui.WorkListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.zixunjieda.ui.ZiXunJieDaListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.zixunjieda.ui.ZiXunJieDaConfigActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.zixunjieda.ui.ZiXunJieDaDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!--咨询解答回复-->
+        <activity
+            android:name="com.chaungying.zixunjieda.ui.ZiXunJieDaDetailsReplyActivity"
+            android:screenOrientation="portrait" />
+
+        <!--用车管理-->
+        <activity
+            android:name="com.chaungying.use_car.ui.UseCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.use_car.ui.UseCarSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.use_car.ui.UseCarOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.use_car.ui.UseCarRecordActivity"
+            android:screenOrientation="portrait" />
+
+        <!--新闻通知-->
+        <activity
+            android:name="com.chaungying.news.ui.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.news.ui.NewsDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.news.ui.NoticeDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <!--园区导航-->
+        <activity
+            android:name="com.chaungying.park_navigation.ui.ActivityParkNavigation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.park_navigation.ui.ActivityParkList"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.chaungying.gongzuotai.ui.MsgListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.gongzuotai.ui.MsgListDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <!--每周菜谱-->
+        <activity
+            android:name="com.chaungying.avery_menu.AveryMenuActivity"
+            android:screenOrientation="portrait" />
+        <!--工作绩效-->
+        <activity
+            android:name="com.chaungying.ji_xiao.ui.PerformanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.ji_xiao.ui.PerRepairDispatchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.ji_xiao.ui.PerSignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.ji_xiao.ui.PerComplaintsConsultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chaungying.ji_xiao.ui.PerUserCarActivity"
+            android:screenOrientation="portrait" />
+
+        <!--工作台，报修处理-->
+        <activity
+            android:name="com.chaungying.gongzuotai.ui.DealWithOrderActivity"
+            android:screenOrientation="portrait" />
+        <!--修改密码-->
+        <activity
+            android:name="com.chaungying.modues.main.ui.UpdatePasswordActivity"
+            android:screenOrientation="portrait" />
+        <!--声音与震动-->
+        <activity
+            android:name="com.chaungying.modues.main.ui.VoiceVibrationActivity"
+            android:screenOrientation="portrait" />
+
+        <!--通讯录  部门分组-->
+        <activity
+            android:name="com.chaungying.address.ui.DepartmentActivity"
+            android:screenOrientation="portrait" />
+        <!--通讯录  人员列表-->
+        <activity
+            android:name="com.chaungying.address.ui.PersonListActivity"
+            android:screenOrientation="portrait" />
+        <!--联系人详情-->
+        <activity
+            android:name="com.chaungying.address.ui.PersonDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.chaungying.address.ui.AllContatActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.chaungying.set.AboutSystemActivity"
+            android:screenOrientation="portrait" />
+        <!--浮动说明Activity-->
+        <activity
+            android:name="com.chaungying.common.ui.FuDongActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <!--周边商城-->
+        <activity
+            android:name="com.chaungying.round_malls.ui.RoundMallsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <activity
+            android:name="com.chaungying.round_malls1.ui.PayMoneyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.chaungying.round_malls1.ui.ShoppingCartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <activity
+            android:name="com.chaungying.round_malls1.ui.ShoopingStoreActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name="com.chaungying.round_malls1.ui.ShoopingGoodsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name="com.chaungying.round_malls1.ui.ShoopingGoodsDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name="com.chaungying.round_malls1.ui.ShippingAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <activity
+            android:name="com.chaungying.round_malls1.ui.AddShippingAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name="com.chaungying.round_malls1.ui.ShoppingStoreMyMsgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <activity
+            android:name="com.chaungying.round_malls1.ui.OrderListDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.chaungying.round_malls1.ui.MyShopActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="adjustPan" />
+        <!--订单评价-->
+        <activity
+            android:name="com.chaungying.round_malls1.ui.OrderListEvaluationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <!--消费-->
+        <activity
+            android:name="com.chaungying.round_malls1.ui.MyShopConsumpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+
+
+        <!--九宫格手势-->
+        <activity
+            android:name="com.chaungying.pass_word.DrawPwdActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <!--百度地图定位-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+        <!--百度地图的Key-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="KeXQK7NMnbM2TcnWHSjqNhoenM39qRfM" />
+
+        <!--////////////////////////////////////极光推送start//////////////////////////////////////////////-->
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chaungying.gongzuotai.ui.AlarmActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--广播接收器-->
+        <receiver
+            android:name="com.chaungying.gongzuotai.ui.AlarmReceiver"
+            android:process=":remote"></receiver>
+        <!--闹钟服务-->
+        <service android:name="com.chaungying.gongzuotai.ui.AlarmService"></service>
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="${applicationId}" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.chaungying.sever.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.chaungying.wuye3" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- 极光推送 Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="a92fa649cb629656090519a0" />
+
+        <service android:name="com.chaungying.sever.MyServiceZHY">
+            <intent-filter>
+                <action android:name="com.example.netvmeet.service.MyServiceZHY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <!--////////////////////////////////////极光推送end//////////////////////////////////////////////-->
+
+    </application>
+
+</manifest>

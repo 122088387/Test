@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+
+     <Button
+        android:id="@+id/shoot_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_movie_add_shoot"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="按住拍" 
+        android:textColor="#20b6ff"/>
+    <com.chaungying.common.view.MovieRecorderView
+        android:id="@+id/movieRecorderView"
+        android:layout_width="match_parent"
+        android:layout_above="@id/shoot_button"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp" />
+    <TextView 
+        android:id="@+id/hintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上移取消"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:layout_above="@id/shoot_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        />
+    
+
+</RelativeLayout>

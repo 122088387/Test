@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/include_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d15"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_marginRight="@dimen/d20"
+        android:padding="@dimen/d10">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消费码"
+            android:textColor="@color/black1"
+            android:textSize="@dimen/TextSize_5" />
+
+        <EditText
+            android:id="@+id/et_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_toRightOf="@id/text1"
+            android:background="@null"
+            android:hint="请输入消费码"
+            android:textSize="@dimen/TextSize_5" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/itemLineSize"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:background="@color/huise2" />
+
+    <TextView
+        android:id="@+id/tv_validation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d40"
+        android:layout_marginRight="@dimen/d40"
+        android:layout_marginTop="@dimen/d20"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:padding="@dimen/d10"
+        android:text="验证"
+        android:textColor="@color/white"
+        android:textSize="@dimen/TextSize_4" />
+
+
+</LinearLayout>

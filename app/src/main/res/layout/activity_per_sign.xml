@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/list_view_line"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:padding="@dimen/d10">
+
+        <TextView
+            android:id="@+id/temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:text="应签到总人数："
+            />
+
+        <TextView
+            android:id="@+id/sign_totalPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/temp1"
+            android:text=""
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gray_line"
+        android:background="@color/White"
+        android:padding="@dimen/d10">
+
+        <TextView
+            android:id="@+id/temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:text="签到人数："
+            />
+
+        <TextView
+            android:id="@+id/sign_signInPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/temp2"
+            android:text=""
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gray_line"
+        android:background="@color/White"
+        android:padding="@dimen/d10">
+
+        <TextView
+            android:id="@+id/temp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:text="迟到早退人数："
+            />
+
+        <TextView
+            android:id="@+id/sign_tardinessPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/temp3"
+            android:text=""
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gray_line"
+        android:padding="@dimen/d10"
+        android:background="@color/White">
+
+        <TextView
+            android:id="@+id/temp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:text="缺勤人数："
+            />
+
+        <TextView
+            android:id="@+id/sign_absenteeismPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/temp4"
+            android:text=""
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d10"
+        android:background="@color/White"
+        android:padding="@dimen/d10">
+
+        <TextView
+            android:id="@+id/per_sign_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/TextSize_3"
+            android:padding="@dimen/d10"
+            android:text="近一周分析"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemLineSize"
+            android:layout_below="@id/per_sign_title"
+            android:background="@color/list_view_line"/>
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/per_sign_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d10"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
