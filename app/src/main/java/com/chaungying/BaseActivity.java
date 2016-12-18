@@ -1,4 +1,4 @@
-package com.chaungying;
+﻿package com.chaungying;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,7 +16,7 @@ import com.chaungying.wuye3.R;
 /**
  * FragmentActivity 的基类
  *
- * @anthor 王晓赛 or 2016/6/23
+ * @anthor 王晓赛 or 2016/6/23  git测试 12月18号
  */
 public class BaseActivity extends AppCompatActivity {
 
